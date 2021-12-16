@@ -13,18 +13,8 @@ import java.util.Map;
 
 @Service
 public class EmployeeServiceImpl implements EmployeeService {
-    private Map<String, Employee> employeeMap = new HashMap<>();
-/*
-    public EmployeeServiceImpl() {
+    private final Map<String, Employee> employeeMap = new HashMap<>();
 
-        addEmployee("Василий", "Иванович", 1, 200);
-        addEmployee("Семён", "Михайлович", 1, 150);
-        addEmployee("Климент", "Ефремович", 2, 300);
-        addEmployee("Григорий", "Иванович", 1, 150);
-        addEmployee("Михаил", "Васильевич", 5, 200);
-    }
-
- */
 
     @Override
     public Employee addEmployee(String firstName, String lastName, int department, int salary) {
